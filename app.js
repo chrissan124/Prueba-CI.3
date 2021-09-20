@@ -20,8 +20,8 @@ app.get('/sum-operation', (req, res) => {
 })
 // FIN DE CÓDIGO REPLICABLE
 
-app.get('/status', (req, res) => {
-  res.json({message: 'HOLA MUNDO (SERVIDOR ACTIVO)', status: 200})
+app.get('/', (req, res) => {
+  res.send('HOLA MUNDO (SERVIDOR ACTIVO)')
 })
 
 app.listen(port, () => {
